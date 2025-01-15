@@ -1,0 +1,372 @@
+.outerbox {
+  display: flex; /* Enables flexbox layout */
+  width: 800px; /* Set the width of the box */
+  height: 600px; /* Set the height of the box */
+  background-color: white; /* Background color */
+  border: 2px solid #333; /* Border width and color */
+  font-family: Arial, sans-serif; /* Font style */
+  color: #333; /* Text color */
+  border-bottom: 3px solid #333; /* Border width and color */
+  border-top: 3px solid #333; /* Border width and color */
+}
+
+.day-box {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: stretch; /* Make child elements span the full width */
+  justify-content: start; /* Align items to the top */
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+.day-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+.schedule-box {
+  flex: 4; /* Takes 4/5 of the space (1 parts) */
+  background-color: white; /* Lighter blue for differentiation */
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1.title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.wholepage {
+  margin-left: 50px;
+}
+
+.day-label-box {
+  flex: 0 0 124.5px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: lightgray;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.monday-box {
+  flex: 0 0 121.5px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.tuesday-box {
+  flex: 0 0 236.5px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.wednesday-box {
+  flex: 1;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.schedule-label {
+  flex: 0 0 59.25px; /* Fixed height */
+  text-align: center;
+  display: flex;
+  border-bottom: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.sch-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+.schedule-data-box {
+  flex: 9;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: row;
+  /* box-sizing: border-box; Ensures the border is included in the box's size */
+}
+
+.morning-box {
+  flex: 3;
+  text-align: center;
+  display: flex;
+  border-right: 1px solid black;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.lunch-box {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  border-right: 1px solid black;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.vertical-lunch {
+  writing-mode: vertical-rl; /* Sets text orientation to vertical */
+  text-orientation: upright; /* Keeps letters upright */
+  font-size: 40px; /* Adjust font size as needed */
+  font-weight: lighter;
+  font-family: Arial, sans-serif; /* Set your font family */
+  display: flex; /* To center the text vertically */
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+}
+
+.afternoon-box {
+  flex: 3;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  box-sizing: border-box;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.morning-label {
+  flex: 0 0 59.25px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: lightgray;
+}
+
+.cei-openning {
+  flex: 0 0 119.5px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: start; /* Centers content horizontally */
+  align-items: stretch; /* Centers content vertically */
+  flex-direction: row;
+}
+
+.cei-pic {
+  flex: 1;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+.cei-text {
+  flex: 1;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: left; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+.healthcare-box {
+  flex: 0 0 59.25px; /* Fixed height */
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.afternoon-label {
+  flex: 0 0 59.25px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  background-color: lightgray;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.tuesday-morning-box {
+  flex: 4;
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: start; /* Centers content horizontally */
+  align-items: stretch; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+  flex-direction: column;
+}
+
+.wednesday-morning-box {
+  flex: 2;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: start; /* Centers content horizontally */
+  align-items: stretch; /* Centers content vertically */
+  flex-direction: row;
+}
+
+.js1 {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.js3 {
+  flex: 1;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.html-boxes {
+  flex: 0 0 59.25px; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: start; /* Centers content horizontally */
+  align-items: stretch; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.html-box1 {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+.html-box2 {
+  flex: 1;
+  text-align: center;
+
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.poster-box {
+  flex: 2;
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+.meet-companies {
+  flex: 2; /* Fixed height */
+  border-bottom: 2px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+.closing {
+  flex: 2;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: yellow;
+}
+
+.css-boxes {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  text-align: center;
+  align-items: stretch;
+  justify-content: start;
+}
+
+.css-box1 {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+.css-box2 {
+  flex: 1;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.smart-city {
+  flex: 1;
+  border-bottom: 1px solid black;
+  text-align: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+.business-meeting-box {
+  flex: 1;
+  text-align: center;
+  border-bottom: 1px solid black;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  box-sizing: border-box; /* Ensures the border is included in the box's size */
+}
+
+.red-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color: red;
+}
+
+.blue-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  color: blue;
+}
+
+/* flex: 4; 
+background-color: #bcd4e6; 
+display: flex;
+justify-content: start;
+align-items: stretch;
+text-align: center;
+flex-direction: column; */

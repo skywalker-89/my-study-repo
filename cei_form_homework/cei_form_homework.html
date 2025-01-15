@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .form-container {
+        max-width: 500px;
+      }
+
+      .form-row {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: flex-start;
+      }
+
+      .form-row label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      .form-row input,
+      .form-row select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-row#st-radio {
+        margin-bottom: -5px;
+      }
+      .form-row#nd-radio {
+        margin-bottom: -5px;
+      }
+
+      label#text-label {
+        margin-top: 3px;
+      }
+
+      label#password-label {
+        margin-top: 3px;
+      }
+
+      /* Text Input */
+      input#text {
+        width: 300px;
+      }
+
+      /* Password Input */
+      input#password {
+        width: 150px;
+      }
+
+      /* Select Boxes */
+      select#select {
+        width: 300px;
+      }
+
+      select#select2 {
+        width: 150px;
+      }
+
+      /* Radio Buttons - Vertical */
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .radio-group label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .radio-group input {
+        margin-right: 5px;
+      }
+
+      /* Radio Buttons - Horizontal */
+      .horizontal-radio {
+        display: flex;
+        align-items: center;
+      }
+
+      .horizontal-radio label {
+        margin-right: -50px; /* Reduced spacing between horizontal options */
+        display: flex;
+        align-items: center;
+      }
+
+      .horizontal-radio input {
+        margin-right: 5px;
+      }
+
+      /* Buttons */
+      button {
+        background-color: #b85c27;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-right: 5px;
+      }
+
+      button.reset {
+        background-color: #b85c27;
+      }
+
+      /* Checkbox Alignment */
+      .form-row input[type="checkbox"],
+      .form-row input[type="radio"] {
+        margin-right: 5px;
+      }
+      .button-container {
+        margin-top: -3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <div class="form-container">
+      <!-- Text Input -->
+      <div class="form-row">
+        <label for="text" id="text-label">Text:</label>
+        <input type="text" id="text" />
+      </div>
+
+      <!-- Password Input -->
+      <div class="form-row">
+        <label for="password" id="password-label">Password:</label>
+        <input type="password" id="password" />
+      </div>
+
+      <!-- Select Boxes -->
+      <div class="form-row">
+        <label for="select">Select:</label>
+        <select id="select">
+          <option>Please Choose</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="select2">Select 2:</label>
+        <select id="select2">
+          <option>Please Choose</option>
+          <option>A</option>
+          <option>B</option>
+          <option>C</option>
+          <option>D</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons - Vertical -->
+      <!-- first row -->
+      <div class="form-row" id="st-radio">
+        <label></label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="radio" id="yes" />
+            Yes
+          </label>
+        </div>
+      </div>
+      <!-- secondrow -->
+      <div class="form-row" id="nd-radio">
+        <label>Radio:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="radio" id="yes" />
+            No
+          </label>
+        </div>
+      </div>
+      <!-- thrid row -->
+      <div class="form-row" id="rd-radio">
+        <label></label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="radio" id="yes" />
+            Maybe So
+          </label>
+        </div>
+      </div>
+
+      <!-- Radio Buttons - Horizontal -->
+      <div class="form-row">
+        <label>Radio 2:</label>
+        <div class="horizontal-radio">
+          <label>
+            <input type="radio" name="radio2" id="yes2" />
+            Yes
+          </label>
+          <label>
+            <input type="radio" name="radio2" id="no2" />
+            No
+          </label>
+          <label>
+            <input type="radio" name="radio2" id="maybe2" />
+            Maybe So
+          </label>
+        </div>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-row">
+        <label for="checkbox1">Checkbox:</label>
+        <input type="checkbox" id="checkbox1" />
+      </div>
+
+      <div class="form-row">
+        <label for="checkbox2">Checkbox 2:</label>
+        <input type="checkbox" id="checkbox2" />
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-row">
+        <label>Buttons:</label>
+        <div class="button-container">
+          <button type="submit">Submit</button>
+          <button type="reset" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
